@@ -28,7 +28,7 @@
 
 // Array Of Words
 const words = [
-    "Hell",
+    "Helloo",
     "Programming",
     "Code",
     "Javascript",
