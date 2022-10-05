@@ -40,6 +40,9 @@ function handleSubmit(e)  {
 	if(Email == user.email && password==user.password ){
 	navigate('/home')
 }
+else(
+	document.getElementById("validation").innerHTML = "Email or password is incorrect"
+)
 })}
         
 
@@ -95,7 +98,7 @@ function HandleChange(){
 							Login
 						</button>
 					</div>
-
+				<div id='validation' style={{color:"red" ,fontWeight: "bold"}}></div>
 					<div className="text-center p-t-12">
 						<span className="txt1">
 							Forgot
