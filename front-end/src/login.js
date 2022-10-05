@@ -21,9 +21,7 @@ const [Data,SetData]=useState([]);
 		console.log(res.data)
 	})
 
-}
-
-)
+},[])
 
 // async function HandleChange(e){
 // 	let items = Email
