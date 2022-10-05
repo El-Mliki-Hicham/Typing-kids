@@ -1,19 +1,32 @@
 
 import React from 'react';
 import { useState } from 'react';
+import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 
 const Login =()=>{
 const [password,SetPassword]=useState("");
-const [email,SetEmail]=useState("");
+const [Email,SetEmail]=useState("");
+const navigate = useNavigate();
 
 async function log(){
-	console.warn(email,password)
+	
+	console.warn(Email,password)
 
-	let items={email,password}
-	 const result = await fetch('http://127.0.0.1:8000/api/data',{
-		method :'POST',
+	let items={Email}
+
+		let result = await fetch("http://127.0.0.1:8000/api/data", {
+		method: 'POST',
+		headers: {
+		"Content-Type": "application/json",
+		"Accept": "application/json"
+		},
+		body: JSON.stringify(items)
+		});
+		result = await result.json();
 		
-	 })
+		navigate('/home')
+	 
 
 }
 	
