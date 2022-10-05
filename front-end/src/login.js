@@ -1,56 +1,66 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
-const Login =()=>{
-// const [password,SetPassword]=useState("");
-const navigate = useNavigate();
 
+const Login =()=>{
+const [password,SetPassword]=useState("");
+const [Email,SetEmail]=useState("");
+const navigate = useNavigate();
+const inputRef = useRef(null)
+const inputRefPW = useRef(null)
 const [Data,SetData]=useState([]);
 
  useEffect(() =>{
-
-	// console.log(e.target.value)
-	let result =  axios.get("http://127.0.0.1:8000/api/data")
+	 // console.log(e.target.value)
+	 const fetchData = async () => {
+	let result = await axios.get("http://127.0.0.1:8000/api/data")
 
 	.then(res=>{
 
 		SetData(res.data)
-		console.log(res.data)
+		console.log(Data)
 	})
-
+	 }
+	 fetchData()
 },[])
 
-// async function HandleChange(e){
-// 	let items = Email
-// 	console.log(e.target.value)
-// 	let result = await axios.get("http://127.0.0.1:8000/api/data")
 
-// 	.then(res=>{
-
-// 		SetEmail(res.data[0].email)
-// 		console.log(res.data[0].email)
-// 	})
-	
+function handleSubmit(e)  {
+    e.preventDefault();
     
-// }
-// async function log(){
 	
-// 		let result = await axios.get("http://127.0.0.1:8000/api/data")
-// 		.then(res=>{
+		Data.map(user=>{
+		
+		
+		
+	
+	if(Email == user.email && password==user.password ){
+	navigate('/home')
+}
+})}
+        
 
-// 			console.log(res.data)
-// 		})
+function HandleChange(){
+	
+
+	console.log(inputRef.current.value)
+	console.log(inputRefPW.current.value)
+	SetEmail(inputRef.current.value)
+	SetPassword(inputRefPW.current.value)
+		
+
+    
+}
+
+
 	
 		
 		
 		
-// 		// navigate('/home')
-	 
 
-// }
 	
 	return(
 	<div className="limiter">
@@ -59,16 +69,13 @@ const [Data,SetData]=useState([]);
 				<div className="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG"></img>
 				</div>
-		{
-			Data.map(user=><h1>{user.id}</h1>)
-		}
 				<form className="login100-form validate-form">
 					<span className="login100-form-title">
 						 Login
 					</span>
 
 					<div className="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input className="input100" type="text" name="email"  placeholder="Email"></input>
+						<input className="input100" type="text"id='email' ref={inputRef}  onChange={HandleChange} name="email"  placeholder="Email"></input>
 						<span className="focus-input100"></span>
 						<span className="symbol-input100">
 							<i className="fa fa-envelope" aria-hidden="true"></i>
@@ -76,7 +83,7 @@ const [Data,SetData]=useState([]);
 					</div>
 
 					<div className="wrap-input100 validate-input"   data-validate = "Password is required">
-						<input className="input100" type="password" name="pass" placeholder="Password"></input>
+						<input className="input100" type="password" ref={inputRefPW} id='password'  onChange={HandleChange} name="pass" placeholder="Password"></input>
 						<span className="focus-input100"></span>
 						<span className="symbol-input100">
 							<i className="fa fa-lock" aria-hidden="true"></i>
@@ -84,7 +91,7 @@ const [Data,SetData]=useState([]);
 					</div>
 					
 					<div className="container-login100-form-btn">
-						<button  className="login100-form-btn">
+						<button onClick={handleSubmit} className="login100-form-btn">
 							Login
 						</button>
 					</div>
