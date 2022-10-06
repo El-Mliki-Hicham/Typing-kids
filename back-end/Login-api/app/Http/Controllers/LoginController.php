@@ -12,6 +12,11 @@ class LoginController extends Controller
         $data = Login::all();
             return $data ;
     }
+    // function GetDataId($id){
+
+    //     $data = Login::findOrFail($id);
+    //         return $data ;
+    // }
     function AddData(Request $request){
         $user = new Login();
 
