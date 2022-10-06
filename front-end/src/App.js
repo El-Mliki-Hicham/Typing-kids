@@ -6,16 +6,17 @@ import GamePage from './Components/GamePage/Game';
 import Login from './Components/LoginPage/login';
 import Home from './Components/HomePage/Home';
 
+
 function App() {
   return (
-    <div className="App">
+    <div>
    
     <BrowserRouter>
         
         <Routes>
-          <Route exact path="/Game" element={<GamePage/>}/>
-          <Route exact path="/Login" element={ <Login/>}/>
-          <Route exact path="/Home" element={ <Home/>}/>
+          <Route   path="/Game" element={<GamePage/>}/>
+          <Route  path="/Login" element={ <Login/>}/>
+          <Route path="/Home" element={ <Home/>}/>
          
         </Routes>
       

@@ -1,5 +1,11 @@
 import React from 'react'
 import './style.css'
+import i from './img/i.png';
+import wave from './img/wave.png';
+import typingclub from './img/game.png';
+import img1 from './img/img1.png';
+import img2 from './img/img2.png';
+import { Link } from 'react-router-dom';
 const Home =()=>{
     return (
 <div>
@@ -7,23 +13,24 @@ const Home =()=>{
     <nav>
       <h2 className="logo">Typing kids</h2>
       <ul>
-        <li><a href="#">Get Started</a></li>
+        <li><Link to="/Game">Get Started</Link></li>
         <li><a href="#">School Edition</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#about">About Us</a></li>
       </ul>
       <a href="#" className="btn">Login</a>
     </nav>
-    <img className="img-p1" src="img/i.png" />
+    <img className="img-p1" src={i} />
     <div className="content">
       <h4>Learn to Type Faster, Easier, and Better </h4>
     </div>
     <div className="btnclass">
-      <a href="#" className="btnn">Get Started</a>
+      
+      <Link to="/Game" className="btnn">Get Started</Link>
     </div>
   </div>
-  <section className="about">
+  <section id='about' className="about">
     <div className="main">
-      <img src="img/typingclub.png" />
+      <img src={typingclub} />
       <div className="about-text">
         <h2>About Us</h2>
         <p className="ppp">
@@ -35,16 +42,16 @@ const Home =()=>{
           the correct finger while improving alphabet recognition, dexterity, and familiarity
           with technology.
         </p>
-        <button type="button">Get Started</button>
+        <Link to="/Game"><button type="button">Get Started</button></Link>
       </div>
     </div>
   </section>
   <div className="wave">
-    <img src="img/wave.png" />
+    <img src={wave} />
   </div>
   <section className="sec1">
     <div className="guide1">
-      <img src="img/img1.png" />
+      <img src={img1} />
       <div className="guide1-text">
         <h2>Engaging Videos</h2>
         <p className="ppp">
@@ -55,7 +62,7 @@ const Home =()=>{
       </div>
     </div>
   </section>
-  {/* --------------------------------------------------------- */}
+ 
   <section className="sec2">
     <div className="guide1">
       <div className="guide2-text">
@@ -66,7 +73,7 @@ const Home =()=>{
           getting them ready to type by associating each finger with letters on the keyboard.
         </p>
       </div>
-      <img src="img/img2.p²²²²²ng" />
+      <img src={img2} />
     </div>
   </section>
   <div className="vid"> 

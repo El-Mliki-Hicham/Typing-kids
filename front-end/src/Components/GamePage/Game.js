@@ -1,11 +1,13 @@
 import React from "react";
 import "./style.css"
 import './script.js'
+import img from './img/back.png'
+import { Link } from "react-router-dom";
 const GamePage =()=>{
 
 return(   
     <div>
-    <body>
+    <body style={{backgroundImage: `url(${img})` }}>
     
 <div class="game">
 
@@ -35,10 +37,10 @@ return(
         Score: <span class="got">0</span> From <span class="total"></span>
 
       </div>
-
     </div>
   </div>
 </div>
+<Link to='/Home'><button class="" style={{backgroundColor:'grey'}}>Back to home</button></Link>
 </div>
 
 
