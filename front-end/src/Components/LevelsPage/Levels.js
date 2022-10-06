@@ -30,7 +30,7 @@ const Levels =()=>{
 <nav>
       <h2 className="logo">Typing kids</h2>
       <ul>
-        <li><a href="/Home">Home</a></li>
+        <li><Link to="/Home">Home</Link></li>
         <li><Link to="/Home#about">About Us</Link></li>
         <li><Link to="/Levels">Get Started</Link></li>
       </ul>
