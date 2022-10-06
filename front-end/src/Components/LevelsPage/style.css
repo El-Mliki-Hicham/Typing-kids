@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Montserrat+Subrayada:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(84, 166, 238);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(71.24deg, #B4A7DD 0.73%, #E8C0FF 99.44%);
+}
+
+.topbar{
+    position: absolute;
+    height: 40px;
+    width: 480px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(13.0505px);
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-bottom: 100px;   
+}
+.li{
+    display: flex;
+  
+}
+
+.li > p{
+    padding: 9px 20px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.levels{
+    padding-top: 50px;
+}
+
+.level{
+   
+    height: 220px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(13.0505px);
+    margin: 0 30px;
+}
+.level::after{
+    content: '';
+    height: 250px;
+    width: 200px;
+    background-color: blue;
+}
+
+.g1{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.g2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    width:180px ;
+
+}
+
+#abc{
+    height: 170px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: center;
+
+}
+
+.line{
+    height:2px ;
+    width: 100%;
+    background-color: black;
+    /* margin-top: 5px; */
+    margin-top:-5px;
+    /* padding: 5px 0; */
+    justify-content: center;
+
+}
+p{
+    font-family: 'Montserrat Subrayada';
+    text-align: center;
+    
+}
+
+.pp2{
+    margin-top: 5px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Montserrat Subrayada';
+    margin-left: 5px;
+}
+.abc1{
+padding-left: 1120px;
+height: 20px;
+
+}

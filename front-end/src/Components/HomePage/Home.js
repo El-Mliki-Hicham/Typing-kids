@@ -13,11 +13,11 @@ const Home =()=>{
     <nav>
       <h2 className="logo">Typing kids</h2>
       <ul>
-        <li><Link to="/Game">Get Started</Link></li>
-        <li><a href="#">School Edition</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About Us</a></li>
+        <li><Link to="/Levels">Get Started</Link></li>
       </ul>
-      <a href="#" className="btn">Login</a>
+      <Link to="/Login" className="btn">Login</Link>
     </nav>
     <img className="img-p1" src={i} />
     <div className="content">
@@ -25,7 +25,7 @@ const Home =()=>{
     </div>
     <div className="btnclass">
       
-      <Link to="/Game" className="btnn">Get Started</Link>
+      <Link to="/Levels" className="btnn">Get Started</Link>
     </div>
   </div>
   <section id='about' className="about">
@@ -42,7 +42,7 @@ const Home =()=>{
           the correct finger while improving alphabet recognition, dexterity, and familiarity
           with technology.
         </p>
-        <Link to="/Game"><button type="button">Get Started</button></Link>
+        <Link to="/Levels"><button type="button">Get Started</button></Link>
       </div>
     </div>
   </section>
