@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 import './script.js'
-const Home =()=>{
+const GamePage =()=>{
 
 return(   
     <div>
@@ -36,4 +36,4 @@ return(
    
 }
 
-export default Home 
+export default GamePage 
