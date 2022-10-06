@@ -47,7 +47,7 @@ function HandleChange(){
 		<div className="container-login100">
 			<div className="wrap-login100">
 				<div className="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG"></img>
+					<img src="images/1974.png" alt="IMG"></img>
 				</div>
 				<form className="login100-form validate-form">
 					<span className="login100-form-title">

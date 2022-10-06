@@ -1,113 +1,164 @@
-:root {
-    --main-color: #4b9cd9;
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: "Open Sans", sans-serif;
-  }
-  .game {
-    background-color: #eee;
-    min-height: 100vh;
-  }
-  .container {
-    margin: auto;
-    max-width: 900px;
-  }
-  .name {
-    background-color: var(--main-color);
-    color: white;
-    padding: 20px;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .message {
-    background-color: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 6px;
-    text-align: center;
-  }
-  .message span {
-    font-weight: bold;
-    color: #209185;
-  }
-  .message span::before {
-    content: "[ ";
-  }
-  .message span::after {
-    content: " ]";
-  }
-  .start {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #e872da;
-    color: white;
-    padding: 20px;
-    cursor: pointer;
-  }
-  .the-word {
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    color: #e872da;
-    user-select: none;
-  }
-  .input {
-    margin: 15px 0;
-    width: 100%;
-    display: block;
-    padding: 15px;
-    border: 3px solid var(--main-color);
-    font-size: 20px;
-    text-align: center;
-    text-transform: capitalize;
-    border-radius: 6px;
-    caret-color: var(--main-color);
-  }
-  .input:focus {
-    outline: none;
-  }
-  .upcoming-words {
-    background-color: white;
-    margin: 15px 0;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .upcoming-words div {
-    background-color: rgb(189, 106, 245);
-    color: white;
-    font-weight: bold;
-    margin: 4px;
-    padding: 10px;
-    border-radius: 6px;
-  }
-  .control {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    padding: 15px;
-  }
-  .control span {
-    font-weight: bold;
-    color: #009688;
-  }
-  .finish {
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    padding: 15px;
-  }
-  .finish .good {
-    color: var(--main-color);
-  }
-  .finish .bad {
-    color: red;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}:root {
+--main-color: #febe00;
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+background-image: url(img/gggdd.png);
+background-size: cover;
+
+font-family: "Open Sans", sans-serif;
+}
+.game {
+
+min-height: 100vh;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.container {
+margin: auto;
+max-width: 900px;
+}
+.name {
+background-color: var(--main-color);
+color: white;
+padding: 20px;
+font-size: 25px;
+text-align: center;
+font-weight: bold;
+}
+.message {
+background-color: white;
+padding: 15px;
+margin: 15px 0;
+border-radius: 6px;
+text-align: center;
+width: 70%;
+  margin-left: 14%;
+}
+.message span {
+font-weight: bold;
+color: #00961e;
+}
+.message span::before {
+content: "[ ";
+}
+.message span::after {
+content: " ]";
+}
+.start {
+font-size: 20px 100px;
+font-weight: bold;
+text-align: center;
+background-color: #febe00;
+color: white;
+padding: 20px;
+cursor: pointer;
+width: 200px;
+border-radius: 5px;
+margin-left: 330px;
+}
+.the-word {
+text-align: center;
+font-weight: bold;
+font-size: 60px;
+color: var(--main-color);
+user-select: none;
+border: #ffffff solid 2px;
+}
+.input {
+margin: 15px 160px;
+width: 60%;
+height: 100px;
+display: block;
+padding: 15px;
+border: 3px solid var(--main-color);
+font-size: 20px;
+text-align: center;
+text-transform: capitalize;
+border-radius: 6px;
+caret-color: var(--main-color);
+}
+.input:focus {
+outline: none;
+}
+.upcoming-words {
+background-color: white;
+margin: 15px 0;
+padding: 15px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.upcoming-words div {
+background-color: var(--main-color);
+color: white;
+font-weight: bold;
+margin: 4px;
+padding: 10px;
+border-radius: 6px;
+}
+.control {
+display: flex;
+justify-content: space-between;
+background-color: white;
+padding: 15px;
+}
+.control span {
+font-weight: bold;
+color: #E8C0FF;
+}
+.finish {
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding: 15px;
+transition: 1s;
+
+}
+.finish .good {
+color: var(--main-color);
+}
+.finish .bad {
+color: red;
+/* background-color: #febe00; */
+border-radius: 5px;
+padding: 10px 60px;
+}
+
+.time{
+height: 100px;
+width: 100px;
+background-color: #ffffff;
+border-radius: 50%;
+text-align: center;
+justify-content: center;
+align-items: center;
+border: #E8C0FF solid 5px;
+}
+
+#time-score{
+display: block;
+padding: 20px 0 0 0;
+}
+#time-score2{
+display: block;
+padding: 20px 0 0 0;
+}
+.score{
+height: 100px;
+width: 100px;
+background-color: #ffffff;
+border-radius: 50%;
+text-align: center;
+justify-content: center;
+align-items: center;
+border: #E8C0FF solid 5px;
+}
