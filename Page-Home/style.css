@@ -7,7 +7,7 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url(../front-end/img/background.jpg);
+    background-image: url(../Page-Home/img/background.jpg);
     background-size: cover;
     background-position:center;
 
@@ -85,4 +85,182 @@ h4{
     border-radius: 30px;
     transition: .4s;
     align-items: center;
+}
+.btnn:hover{
+    background-color: #f1e2ff;
+    border: 2px solid #C7A4EB;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: #595959;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #949494;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 28px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #C7A4EB;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: #f1e2ff;
+    border: 2px solid #C7A4EB;
+    cursor: pointer;
+}
+.wave img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: -5px;
+}
+.sec1{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #E8C0FF;
+}
+.sec1 img{
+    height: auto;
+    width: 430px;
+}
+.guide1-text{
+    width: 550px;
+}
+.guide1{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.guide1-text h2{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.guide1-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 28px;
+    margin-bottom: 45px;
+}
+
+.sec2{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #E8C0FF;
+}
+.sec2 img{
+    height: auto;
+    width: 430px;
+    float: right;
+}
+.guide2-text{
+    width: 550px;
+}
+.guide2{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.guide2-text h2{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.guide2-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 28px;
+    margin-bottom: 45px;
+}
+.vid{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #f8ecff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #E8C0FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center ;
+    justify-self: center;
+    background-color: #e2c6fe;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #595959;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
 }
