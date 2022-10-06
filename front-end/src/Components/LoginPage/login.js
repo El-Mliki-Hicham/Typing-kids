@@ -28,7 +28,7 @@ function handleSubmit(e)  {
     e.preventDefault();
 		Data.map(user=>{			
 	if(Email == user.email && password==user.password ){
-	navigate('/Game')
+	navigate('/Home')
 }
 else(
 	document.getElementById("validation").innerHTML = "Email or password is incorrect"
