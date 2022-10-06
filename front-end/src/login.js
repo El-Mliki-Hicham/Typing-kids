@@ -24,8 +24,6 @@ const [Data,SetData]=useState([]);
 	 }
 	 fetchData()
 },[])
-
-
 function handleSubmit(e)  {
     e.preventDefault();
 		Data.map(user=>{			
@@ -37,26 +35,13 @@ else(
 )
 })}
         
-
 function HandleChange(){
-	
-
 	console.log(inputRef.current.value)
 	console.log(inputRefPW.current.value)
 	SetEmail(inputRef.current.value)
 	SetPassword(inputRefPW.current.value)
-		
-
-    
+  
 }
-
-
-	
-		
-		
-		
-
-	
 	return(
 	<div className="limiter">
 		<div className="container-login100">
