@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 const Login =()=>{
 const [password,SetPassword]=useState("");
 const [Email,SetEmail]=useState("");
+const [Storage,SetStorage]=useState("");
 const navigate = useNavigate();
 const inputRef = useRef(null)
 const inputRefPW = useRef(null)
@@ -28,6 +29,8 @@ function handleSubmit(e)  {
     e.preventDefault();
 		Data.map(user=>{			
 	if(Email == user.email && password==user.password ){
+		SetStorage(user.username)
+		localStorage.setItem('name', JSON.stringify(Storage));
 	navigate('/Home')
 }
 else(

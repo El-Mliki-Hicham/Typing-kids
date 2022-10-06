@@ -16,6 +16,14 @@ import { Link } from "react-router-dom";
 
 const Levels =()=>{
 
+  window.onload = function what(){
+
+    if (localStorage.getItem("name") !== null) {
+      const main = document.getElementById('btnLogin');
+      const externalHTML = localStorage.getItem("name");
+        main.innerHTML = externalHTML;
+    }
+    }
 
     return(
 <div>
@@ -26,7 +34,7 @@ const Levels =()=>{
         <li><Link to="/Home#about">About Us</Link></li>
         <li><Link to="/Levels">Get Started</Link></li>
       </ul>
-      <Link to="/Login" className="btn">Login</Link>
+      <div id='btnLogin'><Link to="/Login" className="btn">Login</Link></div>
     </nav>
   <div className="abc1">
     <img src={abc1} />

@@ -7,6 +7,15 @@ import img1 from './img/img1.png';
 import img2 from './img/img2.png';
 import { Link } from 'react-router-dom';
 const Home =()=>{
+
+  window.onload = function what(){
+
+  if (localStorage.getItem("name") !== null) {
+    const main = document.getElementById('btnLogin');
+    const externalHTML = localStorage.getItem("name");
+      main.innerHTML = externalHTML;
+  }
+  }
     return (
 <div>
   <div className="hero"> 
@@ -17,7 +26,8 @@ const Home =()=>{
         <li><a href="#about">About Us</a></li>
         <li><Link to="/Levels">Get Started</Link></li>
       </ul>
-      <Link to="/Login" className="btn">Login</Link>
+
+      <div id='btnLogin'><Link to="/Login" className="btn">Login</Link></div>
     </nav>
     <img className="img-p1" src={i} />
     <div className="content">
