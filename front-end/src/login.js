@@ -17,9 +17,7 @@ const [Data,SetData]=useState([]);
 	 // console.log(e.target.value)
 	 const fetchData = async () => {
 	let result = await axios.get("http://127.0.0.1:8000/api/data")
-
 	.then(res=>{
-
 		SetData(res.data)
 		console.log(Data)
 	})
@@ -30,13 +28,7 @@ const [Data,SetData]=useState([]);
 
 function handleSubmit(e)  {
     e.preventDefault();
-    
-	
-		Data.map(user=>{
-		
-		
-		
-	
+		Data.map(user=>{			
 	if(Email == user.email && password==user.password ){
 	navigate('/home')
 }
