@@ -29,8 +29,8 @@ function handleSubmit(e)  {
     e.preventDefault();
 		Data.map(user=>{			
 	if(Email == user.email && password==user.password ){
-		SetStorage(user.username)
-		localStorage.setItem('name', JSON.stringify(Storage));
+		
+		localStorage.setItem('name',(user.username));
 	navigate('/Home')
 }
 else(
